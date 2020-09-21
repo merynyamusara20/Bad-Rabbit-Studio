@@ -1,0 +1,12 @@
+@media (min-width: 992px) {
+  .badrabbitStudio-partners > a {
+    width: 180px;
+    margin: 20px 15px;
+  }
+  .badrabbitStudio-partners > a > img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,166 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{overflow-x: hidden;}
+$thin:'Montserrat Thin';
+$regular:'Montserrat Regular';
+$medium:'Montserrat Medium';
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+section{margin: 20px 0;}
+
+h2{
+    font-size: 29px;
+    font-family: $medium;
+}
+p{
+    font-size: 17px;
+    font-family: $thin;
+    color: #000;
+}
+.jumbotron{
+    border-radius: 0!important;
+}
+//index.html
+nav{padding: 1.5rem 0!important;
+   .navbar-toggler{
+       outline: 0!important;
+    }
+    .navbar-brand{
+        >img{
+            width: 50px;
+          }
+    }
+    .nav-item{
+        >a{  
+            font-size: 17px;
+            font-family: $regular;
+            color: rgba(0,0,0,.5);}
+    }
+}
+
+.about-image{
+   background: url('images/Hero-image.png');height: 40px;
+   height: 75vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   margin-bottom: 50px;
+}
+
+.badrabbitStudio-partners{
+    @include flex-wrap ();
+    >a{
+        width: 100px;
+        margin:  20px 15px;
+
+        >img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+footer{
+    a{
+        color: #000;
+        font-size: 14px;
+        margin: 0 4px;
+        font-family: $regular;
+
+        &:hover{
+            transition: all 0.4s ease;
+            color: rgb(255, 217, 0);
+            text-decoration: none;
+        }
+    }
+    p{
+        font-size: 12px;
+        >a{
+            font-size: 12px;
+            font-family: $thin;
+            margin: 0;
+
+        }
+    }
+}
+// contact.html
+.get-in-touch{
+    >div{
+         padding: 20px;
+        .rounded-circle{
+            margin:15px 0;
+            width: 80%;
+        }
+        .team-name{
+            font-family: $medium;
+        }
+        p{
+          font-size: 15px;
+        }
+        a:first-of-type{
+            font-family: $medium;
+            &:hover{
+                transition: all 0.4s ease;
+                color: rgb(255, 217, 0);
+          }
+        }
+        a{
+            font-size: 16px;
+            color: #000;
+            margin: 8px 0;
+            font-family: $thin;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    nav{
+        .navbar-brand{
+            >img{
+             width: 80px;
+            }
+         }
+         .nav-item{
+             >a{  
+                 font-size: 20px;
+               }
+         }
+     }
+
+    .badrabbitStudio-partners{
+        >a{
+            width: 120px;
+            margin:  20px 35px;
+        }
+    }
+}

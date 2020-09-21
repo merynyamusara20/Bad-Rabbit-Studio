@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 29px;
+  font-family: "Montserrat Medium";
+}
+
+p {
+  font-size: 17px;
+  font-family: "Montserrat Thin";
+  color: #000;
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+}
+
+nav {
+  padding: 1.5rem 0 !important;
+}
+
+nav .navbar-toggler {
+  outline: 0 !important;
+}
+
+nav .navbar-brand > img {
+  width: 50px;
+}
+
+nav .nav-item > a {
+  font-size: 17px;
+  font-family: "Montserrat Regular";
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.about-image {
+  background: url("images/Hero-image.png");
+  height: 40px;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.badrabbitStudio-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.badrabbitStudio-partners > a {
+  width: 100px;
+  margin: 20px 15px;
+}
+
+.badrabbitStudio-partners > a > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer a {
+  color: #000;
+  font-size: 14px;
+  margin: 0 4px;
+  font-family: "Montserrat Regular";
+}
+
+footer a:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #ffd900;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer p > a {
+  font-size: 12px;
+  font-family: "Montserrat Thin";
+  margin: 0;
+}
+
+.get-in-touch > div {
+  padding: 20px;
+}
+
+.get-in-touch > div .rounded-circle {
+  margin: 15px 0;
+  width: 80%;
+}
+
+.get-in-touch > div .team-name {
+  font-family: "Montserrat Medium";
+}
+
+.get-in-touch > div p {
+  font-size: 15px;
+}
+
+.get-in-touch > div a:first-of-type {
+  font-family: "Montserrat Medium";
+}
+
+.get-in-touch > div a:first-of-type:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #ffd900;
+}
+
+.get-in-touch > div a {
+  font-size: 16px;
+  color: #000;
+  margin: 8px 0;
+  font-family: "Montserrat Thin";
+}
+
+.get-in-touch > div a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  nav .navbar-brand > img {
+    width: 80px;
+  }
+  nav .nav-item > a {
+    font-size: 20px;
+  }
+  .badrabbitStudio-partners > a {
+    width: 120px;
+    margin: 20px 35px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
