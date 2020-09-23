@@ -36,11 +36,11 @@ nav .navbar-toggler {
   outline: 0 !important;
 }
 
-nav .navbar-brand > img {
+nav .navbar-brand img {
   width: 50px;
 }
 
-nav .nav-item > a {
+nav .nav-item a {
   font-size: 17px;
   font-family: "Montserrat Regular";
   color: rgba(0, 0, 0, 0.5);
@@ -73,12 +73,12 @@ nav .nav-item > a {
       justify-content: space-around;
 }
 
-.badrabbitStudio-partners > a {
+.badrabbitStudio-partners a {
   width: 100px;
   margin: 20px 15px;
 }
 
-.badrabbitStudio-partners > a > img {
+.badrabbitStudio-partners a img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -102,60 +102,311 @@ footer p {
   font-size: 12px;
 }
 
-footer p > a {
+footer p a {
   font-size: 12px;
   font-family: "Montserrat Thin";
   margin: 0;
 }
 
-.get-in-touch > div {
+.get-in-touch div {
   padding: 20px;
 }
 
-.get-in-touch > div .rounded-circle {
+.get-in-touch div .rounded-circle {
   margin: 15px 0;
   width: 80%;
 }
 
-.get-in-touch > div .team-name {
+.get-in-touch div .team-name {
   font-family: "Montserrat Medium";
 }
 
-.get-in-touch > div p {
+.get-in-touch div p {
   font-size: 15px;
 }
 
-.get-in-touch > div a:first-of-type {
+.get-in-touch div a:first-of-type {
   font-family: "Montserrat Medium";
 }
 
-.get-in-touch > div a:first-of-type:hover {
+.get-in-touch div a:first-of-type:hover {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   color: #ffd900;
 }
 
-.get-in-touch > div a {
+.get-in-touch div a {
   font-size: 16px;
   color: #000;
   margin: 8px 0;
   font-family: "Montserrat Thin";
 }
 
-.get-in-touch > div a:hover {
+.get-in-touch div a:hover {
   text-decoration: none;
 }
 
+.motion {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.motion video {
+  height: auto;
+  width: 100%;
+}
+
+.motion .overlay {
+  width: 100%;
+  height: 97.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #000;
+  opacity: 0.5;
+}
+
+.motion h1 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  font-family: "Montserrat Thin";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.stills {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.stills img {
+  height: 100%;
+  width: 100%;
+}
+
+.stills .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #000;
+  opacity: 0.6;
+}
+
+.stills h1 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  font-family: "Montserrat Thin";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.stills-inner .row {
+  padding: 0 15px;
+}
+
+.stills-inner .row a {
+  overflow: hidden;
+}
+
+.stills-inner .row a:hover {
+  text-decoration: none;
+}
+
+.stills-inner .row div {
+  padding: 0;
+  overflow: hidden;
+}
+
+.stills-inner .row div .card {
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  padding: 1px;
+}
+
+.stills-inner .row div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.stills-inner .row div h2 {
+  position: absolute;
+  color: #dd9933;
+  font-size: 25px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.575);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.modal-dialog {
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.modal-dialog .modal-content {
+  padding: 15px !important;
+}
+
+.modal-dialog .modal-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.modal-dialog .modal-inner h3 {
+  font-size: 17px;
+  color: #000;
+}
+
+.modal-dialog p {
+  color: #000;
+  font-family: "Montserrat Regular";
+}
+
+.modal-dialog .modal-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .motion .overlay {
+    height: 98.5%;
+  }
+}
+
 @media (min-width: 992px) {
-  nav .navbar-brand > img {
+  h1 {
+    font-size: 4.5rem !important;
+  }
+  nav .navbar-brand img {
     width: 80px;
   }
-  nav .nav-item > a {
+  nav .nav-item a {
     font-size: 20px;
   }
-  .badrabbitStudio-partners > a {
+  .badrabbitStudio-partners a {
     width: 120px;
     margin: 20px 35px;
+  }
+  .motion .overlay {
+    height: 99%;
+  }
+  footer a {
+    font-size: 20px;
+  }
+  .stills-inner .overlay {
+    display: none;
+  }
+  .stills-inner a:hover .overlay {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .stills-inner h2::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    margin: 15px AUTO;
+    -webkit-animation: moveInLeft .4s ease-out;
+            animation: moveInLeft .4s ease-out;
   }
 }
 /*# sourceMappingURL=style.css.map */

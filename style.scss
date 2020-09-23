@@ -43,12 +43,12 @@ nav{padding: 1.5rem 0!important;
        outline: 0!important;
     }
     .navbar-brand{
-        >img{
+        img{
             width: 50px;
           }
     }
     .nav-item{
-        >a{  
+        a{  
             font-size: 17px;
             font-family: $regular;
             color: rgba(0,0,0,.5);}
@@ -67,11 +67,11 @@ nav{padding: 1.5rem 0!important;
 
 .badrabbitStudio-partners{
     @include flex-wrap ();
-    >a{
+    a{
         width: 100px;
         margin:  20px 15px;
 
-        >img{
+        img{
             width: 100%;
             object-fit: contain;
         }
@@ -93,7 +93,7 @@ footer{
     }
     p{
         font-size: 12px;
-        >a{
+        a{
             font-size: 12px;
             font-family: $thin;
             margin: 0;
@@ -103,7 +103,7 @@ footer{
 }
 // contact.html
 .get-in-touch{
-    >div{
+    div{
          padding: 20px;
         .rounded-circle{
             margin:15px 0;
@@ -131,7 +131,174 @@ footer{
                 text-decoration: none;
             }
         }
-        
+    }
+}
+
+// motion
+.motion{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    video{
+        height: auto;
+        width: 100%;
+    }
+    .overlay {
+        width: 100%;
+        height: 97.5%;
+        position: absolute;
+        top: 0;
+        left: 0;  
+        z-index: 2;
+        background: #000;
+        opacity: 0.5;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        font-family: $thin;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50% );
+      }
+  }
+// stills
+.stills{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;  
+        z-index: 2;
+        background: #000;
+        opacity: 0.6;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        font-family: $thin;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50% );
+      }
+  }
+
+    iframe  {  
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        }
+
+
+.stills-inner{
+    .row{
+        padding: 0 15px;
+
+    a{
+        overflow: hidden;    
+        } 
+        a:hover{text-decoration: none;}
+
+    div{ 
+      padding: 0;
+        overflow: hidden;
+
+    .card{
+        overflow: hidden;
+        border: none;
+        border-radius: 0;
+        padding: 1px;
+   
+        }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        }
+    h2{
+        position: absolute;
+        color: #dd9933;
+        font-size: 25px;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.575);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+           }
+        }
+    }
+  
+}
+.modal-dialog{
+    width: 80%!important;
+
+    margin: auto!important;
+    .modal-content{    
+        padding: 15px!important;
+    }
+      .modal-inner{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 15px;
+
+          h3{
+              font-size: 17px;
+              color: #000;}
+            }
+            p{
+                color:#000;
+                font-family: $regular;
+            }
+            .modal-flex{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex: 30%;
+
+            }
+
+}
+
+
+
+
+
+@keyframes moveInLeft{
+    0%{
+     opacity:0;
+     transform: translateX(-100px)
+    }
+    100%{
+    opacity:1;
+    transform: translate(0)
     }
 }
 
@@ -140,27 +307,86 @@ footer{
 
 
 
+// #page-mod-lesson-view #region-main legend.ftoggler {
+//   display: none;
+// }
+
+
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .motion{
+        .overlay {
+            height: 98.5%;
+          }
+        }
+
+
+}
+
+  
+
 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    h1{font-size: 4.5rem!important;}
     nav{
         .navbar-brand{
-            >img{
+            img{
              width: 80px;
             }
          }
          .nav-item{
-             >a{  
+             a{  
                  font-size: 20px;
                }
          }
      }
-
     .badrabbitStudio-partners{
-        >a{
+        a{
             width: 120px;
             margin:  20px 35px;
         }
     }
+    .motion{
+        .overlay {
+            height: 99%;
+          }
+    }
+
+    footer{
+        a{
+            font-size: 20px;
+        }
+    }
+    .stills-inner{
+        .overlay{
+             display: none;
+             }
+
+        a:hover .overlay{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+         
+               }
+            h2{
+                &::after{
+                    display: flex;
+                    width: 200px;
+                    height: 2px;
+                    background: #fff;
+                    content: '';
+                    margin: 15px AUTO;
+                    animation: moveInLeft .4s ease-out;
+                     }
+                }
+            }
 }
