@@ -223,7 +223,6 @@ footer{
 
     div{ 
       padding: 0;
-        overflow: hidden;
 
     .card{
         overflow: hidden;
@@ -257,32 +256,32 @@ footer{
   
 }
 .modal-dialog{
-    width: 80%!important;
+    width: 90%!important;
 
-    margin: auto!important;
-    .modal-content{    
-        padding: 15px!important;
+    margin:15px auto!important;
+    .modal-body{  
+        padding: 0 1rem!important;
+  
     }
-      .modal-inner{
+      .modal-header{
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
+          padding: 10px 1rem!important;
 
           h3{
-              font-size: 17px;
+              font-size: 16px;
               color: #000;}
+              font-family: $regular;
             }
             p{
                 color:#000;
-                font-family: $regular;
+                font-family: $thin;
             }
             .modal-flex{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                flex: 30%;
-
+                img{margin-bottom: 20px;}
+      
             }
 
 }
@@ -364,6 +363,7 @@ footer{
         }
     }
     .stills-inner{
+        
         .overlay{
              display: none;
              }
@@ -375,9 +375,11 @@ footer{
             justify-content: center;
             width: 100%;
             height: 100%;
-         
+            background: rgba(0, 0, 0, 0.575);
                }
+
             h2{
+                background: none!important;
                 &::after{
                     display: flex;
                     width: 200px;
@@ -389,4 +391,20 @@ footer{
                      }
                 }
             }
+        .modal-dialog{
+           
+            .modal-flex{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap!important;
+                a:first-of-type{display: none;}
+
+                a{
+                    width: 33.1%;
+                    padding: 1.5px;
+                    margin: 0 auto;
+                    img{width: 100%;}
+                }
+            }
+        }
 }

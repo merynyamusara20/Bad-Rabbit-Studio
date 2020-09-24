@@ -242,7 +242,6 @@ iframe {
 
 .stills-inner .row div {
   padding: 0;
-  overflow: hidden;
 }
 
 .stills-inner .row div .card {
@@ -284,15 +283,15 @@ iframe {
 }
 
 .modal-dialog {
-  width: 80% !important;
-  margin: auto !important;
+  width: 90% !important;
+  margin: 15px auto !important;
 }
 
-.modal-dialog .modal-content {
-  padding: 15px !important;
+.modal-dialog .modal-body {
+  padding: 0 1rem !important;
 }
 
-.modal-dialog .modal-inner {
+.modal-dialog .modal-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,29 +301,23 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 10px 1rem !important;
+  font-family: "Montserrat Regular";
 }
 
-.modal-dialog .modal-inner h3 {
-  font-size: 17px;
+.modal-dialog .modal-header h3 {
+  font-size: 16px;
   color: #000;
 }
 
 .modal-dialog p {
   color: #000;
-  font-family: "Montserrat Regular";
+  font-family: "Montserrat Thin";
 }
 
-.modal-dialog .modal-flex {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+.modal-dialog .modal-flex img {
+  margin-bottom: 20px;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -395,6 +388,10 @@ iframe {
             justify-content: center;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.575);
+  }
+  .stills-inner h2 {
+    background: none !important;
   }
   .stills-inner h2::after {
     display: -webkit-box;
@@ -407,6 +404,25 @@ iframe {
     margin: 15px AUTO;
     -webkit-animation: moveInLeft .4s ease-out;
             animation: moveInLeft .4s ease-out;
+  }
+  .modal-dialog .modal-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .modal-dialog .modal-flex a:first-of-type {
+    display: none;
+  }
+  .modal-dialog .modal-flex a {
+    width: 33.1%;
+    padding: 1.5px;
+    margin: 0 auto;
+  }
+  .modal-dialog .modal-flex a img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
