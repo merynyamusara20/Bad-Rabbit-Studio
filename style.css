@@ -5,6 +5,16 @@
           box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0;
+}
+
+button {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  outline: 0;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -287,8 +297,25 @@ iframe {
   margin: 15px auto !important;
 }
 
+.modal-dialog .close-modal {
+  color: black;
+  font-family: "Montserrat Thin";
+  padding: 30px;
+  font-size: 18px;
+}
+
 .modal-dialog .modal-body {
   padding: 0 1rem !important;
+}
+
+.modal-dialog .modal-body tr {
+  height: 30px;
+}
+
+.modal-dialog .modal-body tr td {
+  color: #120512;
+  font-family: "Montserrat Thin";
+  margin: 6px 0;
 }
 
 .modal-dialog .modal-header {

@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     }
-
+    *:focus {
+        outline: 0;
+    }
+    button{
+        box-shadow: 0;
+        outline: 0;
+    }
 body{overflow-x: hidden;}
 $thin:'Montserrat Thin';
 $regular:'Montserrat Regular';
@@ -257,10 +263,23 @@ footer{
 }
 .modal-dialog{
     width: 90%!important;
-
+    .close-modal{
+        color: black;
+        font-family: $thin;
+        padding: 30px;
+        font-size: 18px;
+    }
     margin:15px auto!important;
     .modal-body{  
         padding: 0 1rem!important;
+        tr{height: 30px;
+            td{
+                color: #120512;
+                font-family: $thin;
+                margin: 6px 0;
+            }
+        }
+     
   
     }
       .modal-header{
