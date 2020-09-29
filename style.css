@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 h2 {
@@ -192,6 +192,74 @@ footer p a {
           transform: translate(-50%, -50%);
 }
 
+.inner-motion .row div {
+  position: relative;
+}
+
+.inner-motion .row div .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #000;
+}
+
+.inner-motion .row div .embed-container iframe, .inner-motion .row div .embed-container object, .inner-motion .row div .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-motion .row div img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inner-motion .row div p {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-family: "Montserrat Thin";
+  font-size: 18px;
+  background: #00000080;
+  text-align: center;
+}
+
+.inner-motion .row div:hover .embed-container {
+  opacity: 1;
+}
+
+.inner-motion .row div:hover img {
+  opacity: 0;
+}
+
+.inner-motion .row div:hover p {
+  opacity: 0;
+}
+
 .stills {
   position: relative;
   width: 100%;
@@ -202,6 +270,8 @@ footer p a {
 .stills img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .stills .overlay {
@@ -226,16 +296,6 @@ footer p a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-iframe {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 .stills-inner .row {
@@ -294,7 +354,6 @@ iframe {
 
 .modal-dialog {
   width: 90% !important;
-  margin: 15px auto !important;
 }
 
 .modal-dialog .close-modal {
@@ -380,6 +439,9 @@ iframe {
 }
 
 @media (min-width: 992px) {
+  section {
+    margin: 60px 0;
+  }
   h1 {
     font-size: 4.5rem !important;
   }
@@ -450,6 +512,9 @@ iframe {
   }
   .modal-dialog .modal-flex a img {
     width: 100%;
+  }
+  .inner-motion .row div p {
+    font-size: 29px;
   }
 }
 /*# sourceMappingURL=style.css.map */
