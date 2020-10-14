@@ -246,9 +246,9 @@ footer{
              p{position: absolute;display: flex; align-items: center;justify-content: center;opacity: 2;top: 0;bottom: 0;left: 0;right:0;color:#fff;font-family: $thin;font-size: 18px;background: #00000080;text-align: center;}
 
         }
-        div:hover .embed-container{opacity: 1;}
-        div:hover img{opacity: 0;}
-        div:hover p{opacity: 0;}
+        div:hover .embed-container{opacity: 1;z-index: 99999;}
+        div:hover img{opacity: 0;z-index: 1;}
+        div:hover p{opacity: 0;z-index: 1;}
     }
 }
 // stills

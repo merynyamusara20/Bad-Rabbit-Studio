@@ -355,14 +355,17 @@ footer p a {
 
 .inner-motion .row div:hover .embed-container {
   opacity: 1;
+  z-index: 99999;
 }
 
 .inner-motion .row div:hover img {
   opacity: 0;
+  z-index: 1;
 }
 
 .inner-motion .row div:hover p {
   opacity: 0;
+  z-index: 1;
 }
 
 .stills {
